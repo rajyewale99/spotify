@@ -1,0 +1,248 @@
+body{
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    
+}
+.sidebar{
+    width: 340px;
+    border-radius: 1rem;
+    
+}
+.main-content{
+    background-color: #121212;
+    border-radius: 1rem;
+    flex: 1;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color:black;
+    position: fixed;
+    bottom: 0px;
+    height: 72px;
+    width: 100%;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.content{
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    margin: 0.5rem 0.75rem;
+    background-color: #121212;
+    
+}
+.nav{
+    line-height: 40px;
+    opacity: 0.7;
+    margin-left: 1rem;
+}
+.nav:hover{
+    line-height: 40px;
+    opacity: 1;
+}
+.nav i{
+    size: 1.25rem;
+}
+.nav a{
+    size: 1rem;
+    margin-left: 1rem
+}
+.lib{
+    background-color: #121212;
+    height: 100%;
+    border-radius: 1rem;
+    margin: 0.5rem 0.75rem;
+    padding: 0.5rem 0.75rem;
+}
+.lib-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+}
+.icons i{
+    margin-right: 1rem;
+    opacity: 0.7;
+    font-size: 1.25rem;
+}
+.icons i:hover{
+   opacity: 1;
+}
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 1.5rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.box-p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+.badge1 , .badge2 , .badge3{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    height: 2rem;
+    width: fit-content;
+}
+.navi{
+    background-color: #121212;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0.75rem;
+    z-index: 10;
+}
+.nav1 i{
+    
+    margin-left: 0.5rem;
+}
+.nav2{
+    margin-right: 0.5rem;
+}
+.badge4{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    height: 2rem;
+    width: fit-content;
+}
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+}
+.card1 .img{
+    border-radius: 0.5rem;
+}
+.card1 .p1{
+    font-weight: 600;
+}
+.card .p2{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.abc{
+    margin-bottom: 72px;
+}
+.album{
+    width: 25%;
+}
+.playback{
+    width: 50%;
+}
+.controls{
+    width: 25%;
+}
+.pl1{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+
+}
+.pl-cn{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;}
+.pl-cn:hover{
+    opacity:1;
+}
+.pl2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.line{
+    width: 70%;
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.line::-webkit-slider-runnable-track{
+background-color: white;
+border-radius: 100px;
+height: 0.2rem;
+}
+.line::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    margin-top: -6px;
+    background-color: #1bd760;
+    border-radius: 50%;
+}
+.album .im1{
+    border-radius: 1rem;
+    height: 60px;
+    display: flex;
+    margin:0.5rem 0.5rem 0.5rem 0.5rem
+}
+/* .album{
+    color: white;
+} */
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    
+}
+.control .c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    margin-right: 7px;
+}
+.control .c1{
+    height: 1.5rem;
+    opacity: 0.7;
+}
+.control .c2{
+    height: 1.25rem;
+    opacity: 0.7;
+}
